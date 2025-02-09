@@ -11,6 +11,7 @@ const userSchema = new mongoose.Schema({
     min: 6,
     max: 32,
     required: true,
+    unique: true,
   },
   password: {
     type: String,
@@ -23,6 +24,7 @@ const userSchema = new mongoose.Schema({
     min: 6,
     max: 32,
     required: true,
+    unique: true,
   },
   todos: [
     {

@@ -9,6 +9,8 @@ const todoSchema = mongoose.Schema({
   desc: {
     type: String,
     required: true,
+    min: 1,
+    max: 255,
   },
   isCompleted: {
     type: Boolean,
